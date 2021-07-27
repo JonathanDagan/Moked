@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from '@cypress/react'
-import IndexPage from '../../pages/index'
+import NavBar from '../../components/Navbar/Navbar'
 
 it('Renders page component', () => {
-  mount(<IndexPage />)
-  cy.contains('Welcome to Next.js')
+  mount(<NavBar />)
+  cy.contains('HaMoked')
 })

@@ -1,4 +1,6 @@
 {
     "testFiles": "**/*.test.{js,ts,jsx,tsx}",
-    "componentFolder": "cypress/pages"
+    "componentFolder": "cypress/pages",
+    "viewportWidth": 1280,
+    "viewportHeight": 1024
 }

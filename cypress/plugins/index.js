@@ -19,6 +19,11 @@
 const injectDevServer = require('@cypress/react/plugins/next')
 
 module.exports = (on, config) => {
+  /*
+  TODO: Figgure out how to have the ct test files with the components themselves
+  will require to have the webpack config be used from next when the component is outside
+  the pages directory
+  */
   injectDevServer(on, config)
 
   return config
