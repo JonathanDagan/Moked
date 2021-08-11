@@ -1,47 +1,17 @@
 {
-  "name": "moked",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test-ct": "yarn cypress run-ct",
-    "prepare": "husky install",
-    "postinstall": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "dependencies": {
-    "@bit/react-bootstrap.react-bootstrap.button": "^1.0.0",
-    "@bit/react-bootstrap.react-bootstrap.form": "^1.0.0",
-    "@bit/react-bootstrap.react-bootstrap.form-control": "^1.0.0",
-    "@bit/react-bootstrap.react-bootstrap.internal.style-links": "^1.0.0",
-    "@bit/react-bootstrap.react-bootstrap.nav": "^1.0.0",
-    "@bit/react-bootstrap.react-bootstrap.navbar": "^1.0.0",
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@cypress/react": "^5.9.2",
-    "@cypress/webpack-dev-server": "^1.4.0",
-    "@storybook/addon-actions": "^6.3.5",
-    "@storybook/addon-essentials": "^6.3.5",
-    "@storybook/addon-links": "^6.3.5",
-    "@storybook/react": "^6.3.5",
-    "@types/react": "17.0.14",
-    "babel-loader": "^8.2.2",
-    "cypress": "8.0.0",
-    "eslint": "7.31.0",
-    "eslint-config-next": "11.0.1",
-    "html-webpack-plugin": "5",
-    "husky": "^7.0.0",
-    "typescript": "4.3.5",
-    "webpack": "5",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "3"
+    "name": "moked",
+    "version": "0.2.0",
+    "private": true,
+    "scripts": {
+      "dev": "yarn --cwd frontend run dev",
+      "lint": "yarn --cwd frontend run lint",
+      "open-ct": "yarn --cwd frontend run cypress open-ct",
+      "postinstall": "(cd frontend && yarn install);"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "husky": "^7.0.0"
+    }
   }
-}
+  
