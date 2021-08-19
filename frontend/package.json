@@ -8,8 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "test-ct": "yarn cypress run-ct",
-    "prepare": "husky install",
-    "postinstall": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
