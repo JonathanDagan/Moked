@@ -8,7 +8,7 @@
     "dev:backend": "yarn --cwd backend run start:dev",
     "lint": "yarn --cwd frontend run lint",
     "open-ct": "yarn --cwd frontend run cypress open-ct",
-    "postinstall": "((cd frontend && yarn install); & (cd ../backend && yarn install););"
+    "postinstall": "((cd frontend && yarn install); && (cd ../backend && yarn install););"
   },
   "dependencies": {},
   "devDependencies": {
