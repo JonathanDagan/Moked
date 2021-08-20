@@ -9,8 +9,8 @@
     "lint": "yarn --cwd frontend run lint",
     "open-ct": "yarn --cwd frontend run cypress open-ct",
     
-    "install:frontend": "(cd ./frontend && yarn install);",
-    "install:backend": "(cd ./backend && yarn install);",
+    "install:frontend": "(yarn --cwd ./frontend install);",
+    "install:backend": "(yarn --cwd ./backend install);",
     
     "postinstall": "npm-run-all --parallel install:*"
   },
