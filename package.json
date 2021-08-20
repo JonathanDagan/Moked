@@ -1,6 +1,6 @@
 {
   "name": "moked",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "scripts": {
     "dev": "npm-run-all --parallel dev:frontend dev:backend",
@@ -8,7 +8,11 @@
     "dev:backend": "yarn --cwd backend run start:dev",
     "lint": "yarn --cwd frontend run lint",
     "open-ct": "yarn --cwd frontend run cypress open-ct",
-    "postinstall": "((cd frontend && yarn install); && (cd ../backend && yarn install););"
+    
+    "install:frontend": "cd frontend && yarn install",
+    "install:backend": "cd backend && yarn install",
+    
+    "postinstall": "npm-run-all --parallel install:*"
   },
   "dependencies": {},
   "devDependencies": {
