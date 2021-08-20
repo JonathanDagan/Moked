@@ -1,10 +1,9 @@
 {
   "name": "moked-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Backend part of the moked app",
+  "author": "Jonathan Dagan",
   "private": true,
-  "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
